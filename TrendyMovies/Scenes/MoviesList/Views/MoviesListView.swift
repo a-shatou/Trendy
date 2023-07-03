@@ -25,6 +25,8 @@ struct MoviesListView: View {
                 LazyVStack(alignment: .center, spacing: 0) {
                     makeProgressView()
                     
+                    makeRefreshMoviesButton()
+                    
                     makeMovieListView()
                     
                     makeLoadingMoviesView()
@@ -44,7 +46,22 @@ struct MoviesListView: View {
             Text("Loading trending movies...")
         }
         .padding(.top, 24)
-        .isHidden(!output.isFetchingMovies && !output.movies.isEmpty, remove: true)
+        .isHidden(!output.movies.isEmpty && !output.isFetchingMovies, remove: true)
+    }
+    
+    private func makeRefreshMoviesButton() -> some View {
+        return VStack(alignment: .center, spacing: 16) {
+            Text(output.errorMessage ?? "")
+                .foregroundColor(.secondary)
+            
+            Button {
+                input.fetchMoviesTrigger.send()
+            } label: {
+                Text("Load Movies")
+            }
+        }
+        .padding(.all, 24)
+        .isHidden(!output.movies.isEmpty || output.isFetchingMovies, remove: true)
     }
     
     private func makeMovieListView() -> some View {

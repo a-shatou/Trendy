@@ -14,57 +14,10 @@
             filePath = "TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "fetchMovies()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "35246BC9-4143-482C-982C-985A5F7648A2 - 87b493ab57bb3655"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TrendyMovies.MoviesListViewModel.fetchMovies() -&gt; ()"
-                  moduleName = "TrendyMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ashatou/Work%20Local/2.%20Personal/1.%20Apps/TrendyMovies/TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "278">
-               </Location>
-               <Location
-                  uuid = "35246BC9-4143-482C-982C-985A5F7648A2 - 727c000a49e9645c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TrendyMovies.MoviesListViewModel.fetchMovies() -&gt; ()"
-                  moduleName = "TrendyMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ashatou/Work%20Local/2.%20Personal/1.%20Apps/TrendyMovies/TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "230">
-               </Location>
-               <Location
-                  uuid = "35246BC9-4143-482C-982C-985A5F7648A2 - 727c000a49e9647f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TrendyMovies.MoviesListViewModel.fetchMovies() -&gt; ()"
-                  moduleName = "TrendyMovies"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ashatou/Work%20Local/2.%20Personal/1.%20Apps/TrendyMovies/TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "118"
-                  endingLineNumber = "118"
-                  offsetFromSymbolStart = "115">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -77,8 +30,8 @@
             filePath = "TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "108"
-            endingLineNumber = "108"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "fetchMovies()"
             landmarkType = "7">
          </BreakpointContent>
@@ -93,9 +46,25 @@
             filePath = "TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "fetchMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "658E9C4D-5821-4FE6-A498-310B49B8AD81"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendyMovies/Scenes/MoviesList/Views/MoviesListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "makeProgressView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

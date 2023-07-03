@@ -24,6 +24,7 @@ final class MoviesListViewModel: ViewModel, MoviesListViewModelProtocol, ViewMod
         let viewAppearedTrigger: AnyUIEvent<Void> = .create()
         let getMoreMoviesTrigger: AnyUIEvent<Void> = .create()
         let movieImpressionTrigger: AnyUIEvent<Movie> = .create()
+        let fetchMoviesTrigger: AnyUIEvent<Void> = .create()
     }
     
     class Output: ObservableObject {
@@ -50,6 +51,7 @@ final class MoviesListViewModel: ViewModel, MoviesListViewModelProtocol, ViewMod
         observeViewAppearedTrigger()
         observeGetMoreMoviesTrigger()
         observeMovieImpressionTrigger()
+        observeFetchMoviesTrigger()
     }
 }
 
@@ -90,6 +92,16 @@ extension MoviesListViewModel {
                     return
                 }
                 
+                self.fetchMovies()
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func observeFetchMoviesTrigger() {
+        input
+            .fetchMoviesTrigger
+            .sink { [weak self] in
+                guard let self else { return }
                 self.fetchMovies()
             }
             .store(in: &cancellables)
