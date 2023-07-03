@@ -16,6 +16,7 @@ protocol MoviesListRepositoryProtocol {
 
 final class MoviesListRepository: MoviesListRepositoryProtocol {
     private var currentPage = 0
+    private let accessToken = "enterAccessTokenHere"
     
     @MainActor func getMoviesList() async throws -> [Movie] {
         self.currentPage += 1
@@ -24,7 +25,7 @@ final class MoviesListRepository: MoviesListRepositoryProtocol {
         var request =  URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0OGY3ZmIyNDYxMGYwYjlmZGIyMzJmNmNhYTY0NGYzYiIsInN1YiI6IjY0YTMwOTQ1OGUyMGM1MDBjYmVjMjRhNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.INBgXvbmn2evTshv_MYAEfegUagzHicc3m5L8NRKIfE", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer \(accessToken)", forHTTPHeaderField: "Authorization")
         
         let (data, response) = try await session.data(for: request)
         

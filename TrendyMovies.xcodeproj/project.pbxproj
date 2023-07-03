@@ -10,7 +10,6 @@
 		7609E2802A52F5E4002216A7 /* TrendyMoviesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E27F2A52F5E4002216A7 /* TrendyMoviesApp.swift */; };
 		7609E2822A52F5E4002216A7 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2812A52F5E4002216A7 /* MoviesListView.swift */; };
 		7609E2842A52F5E6002216A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609E2832A52F5E6002216A7 /* Assets.xcassets */; };
-		7609E2872A52F5E6002216A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609E2862A52F5E6002216A7 /* Preview Assets.xcassets */; };
 		7609E2972A5324AE002216A7 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2962A5324AE002216A7 /* MoviesListViewModel.swift */; };
 		7609E29A2A53251B002216A7 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 7609E2992A53251B002216A7 /* Factory */; };
 		7609E29D2A532574002216A7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E29C2A532574002216A7 /* ViewModel.swift */; };
@@ -23,6 +22,7 @@
 		7609E2B22A532D61002216A7 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2B12A532D61002216A7 /* ViewExtensions.swift */; };
 		7609E2B82A5349DD002216A7 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */; };
 		7609E2BA2A534AF3002216A7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2B92A534AF3002216A7 /* StringExtensions.swift */; };
+		7609E2C02A536184002216A7 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2BF2A536184002216A7 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,6 @@
 		7609E27F2A52F5E4002216A7 /* TrendyMoviesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyMoviesApp.swift; sourceTree = "<group>"; };
 		7609E2812A52F5E4002216A7 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
 		7609E2832A52F5E6002216A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7609E2862A52F5E6002216A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7609E2962A5324AE002216A7 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
 		7609E29C2A532574002216A7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7609E2A02A5325DC002216A7 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		7609E2B12A532D61002216A7 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
 		7609E2B92A534AF3002216A7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		7609E2BF2A536184002216A7 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,17 +83,8 @@
 				7609E29E2A532579002216A7 /* Scenes */,
 				7609E2B02A532D55002216A7 /* Extensions */,
 				7609E2952A52F73F002216A7 /* Assets */,
-				7609E2852A52F5E6002216A7 /* Preview Content */,
 			);
 			path = TrendyMovies;
-			sourceTree = "<group>";
-		};
-		7609E2852A52F5E6002216A7 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				7609E2862A52F5E6002216A7 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		7609E2932A52F716002216A7 /* Views */ = {
@@ -116,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				7609E2832A52F5E6002216A7 /* Assets.xcassets */,
+				7609E2BF2A536184002216A7 /* LaunchScreen.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -263,7 +255,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7609E2872A52F5E6002216A7 /* Preview Assets.xcassets in Resources */,
 				7609E2842A52F5E6002216A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7609E2C02A536184002216A7 /* LaunchScreen.swift in Sources */,
 				7609E2BA2A534AF3002216A7 /* StringExtensions.swift in Sources */,
 				7609E2972A5324AE002216A7 /* MoviesListViewModel.swift in Sources */,
 				7609E2822A52F5E4002216A7 /* MoviesListView.swift in Sources */,
@@ -414,15 +406,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TrendyMovies/Preview Content\"";
 				DEVELOPMENT_TEAM = 93577UJ5E6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,15 +434,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"TrendyMovies/Preview Content\"";
 				DEVELOPMENT_TEAM = 93577UJ5E6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
