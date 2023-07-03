@@ -22,13 +22,14 @@ struct MoviesListView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack(alignment: .center, spacing: 0) {
+                LazyVStack(alignment: .center, spacing: 0) {
                     makeProgressView()
                     
                     makeMovieListView()
                     
+                    makeLoadingMoviesView()
                     
-                    // Shall show pagination view
+                    makeViewMoreButton()
                 }
             }
             .navigationTitle("Trending Movies")
@@ -87,11 +88,34 @@ struct MoviesListView: View {
                         .foregroundColor(.secondary)
                         .font(.system(.caption))
                 }
+                
+                Spacer()
             }
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 16)
         .buttonStyle(PlainButtonStyle())
+        .onFirstAppear {
+            input.movieImpressionTrigger.send(movie)
+        }
+    }
+    
+    private func makeLoadingMoviesView() -> some View {
+        return ProgressView {
+            Text("Loading more movies...")
+        }
+        .padding(.all, 16)
+        .isHidden(output.movies.isEmpty || output.errorMessage != nil, remove: true)
+    }
+    
+    private func makeViewMoreButton() -> some View {
+        return Button {
+            input.getMoreMoviesTrigger.send()
+        } label: {
+            Text("View More")
+        }
+        .padding(.all, 16)
+        .isHidden(output.movies.isEmpty || output.isFetchingMovies, remove: true)
     }
     
 }

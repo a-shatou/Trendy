@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "autochangeable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/almazrafi/AutoChangeable.git",
+      "state" : {
+        "revision" : "fd4192b5bc352e70faf13a071ec34c7e3b2d3f1b",
+        "version" : "1.0.1"
+      }
+    },
+    {
+      "identity" : "factory",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hmlongco/Factory",
+      "state" : {
+        "revision" : "061b3afe0358a0da7ce568f8272c847910be3dd7",
+        "version" : "2.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

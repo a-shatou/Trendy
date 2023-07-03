@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A00DC9A3-2575-4BF7-A639-E31B36A220FB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35246BC9-4143-482C-982C-985A5F7648A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "fetchMovies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "35246BC9-4143-482C-982C-985A5F7648A2 - 87b493ab57bb3655"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TrendyMovies.MoviesListViewModel.fetchMovies() -&gt; ()"
+                  moduleName = "TrendyMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashatou/Work%20Local/2.%20Personal/1.%20Apps/TrendyMovies/TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "278">
+               </Location>
+               <Location
+                  uuid = "35246BC9-4143-482C-982C-985A5F7648A2 - 727c000a49e9645c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TrendyMovies.MoviesListViewModel.fetchMovies() -&gt; ()"
+                  moduleName = "TrendyMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashatou/Work%20Local/2.%20Personal/1.%20Apps/TrendyMovies/TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "119"
+                  endingLineNumber = "119"
+                  offsetFromSymbolStart = "230">
+               </Location>
+               <Location
+                  uuid = "35246BC9-4143-482C-982C-985A5F7648A2 - 727c000a49e9647f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for closure #1 @Sendable () async -&gt; () in TrendyMovies.MoviesListViewModel.fetchMovies() -&gt; ()"
+                  moduleName = "TrendyMovies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ashatou/Work%20Local/2.%20Personal/1.%20Apps/TrendyMovies/TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD0EC369-9C47-4C76-ACA0-226F6A75EE69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "fetchMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4ED4B71-3E2A-4C6D-AB4E-A61BA7FEBD3D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TrendyMovies/Scenes/MoviesList/ViewModels/MoviesListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "fetchMovies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

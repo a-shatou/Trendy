@@ -22,6 +22,8 @@ final class MoviesListViewModel: ViewModel, MoviesListViewModelProtocol, ViewMod
     
     class Input: ObservableObject {
         let viewAppearedTrigger: AnyUIEvent<Void> = .create()
+        let getMoreMoviesTrigger: AnyUIEvent<Void> = .create()
+        let movieImpressionTrigger: AnyUIEvent<Movie> = .create()
     }
     
     class Output: ObservableObject {
@@ -46,6 +48,8 @@ final class MoviesListViewModel: ViewModel, MoviesListViewModelProtocol, ViewMod
         super.init()
         
         observeViewAppearedTrigger()
+        observeGetMoreMoviesTrigger()
+        observeMovieImpressionTrigger()
     }
 }
 
@@ -61,18 +65,51 @@ extension MoviesListViewModel {
             }
             .store(in: &cancellables)
     }
+    
+    private func observeGetMoreMoviesTrigger() {
+        input
+            .getMoreMoviesTrigger
+            .sink { [weak self] in
+                guard let self else { return }
+                self.fetchMovies()
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func observeMovieImpressionTrigger() {
+        input
+            .movieImpressionTrigger
+            .sink { [weak self] movie in
+                guard
+                    let self,
+                    let indexOfMovie = self.output.movies.firstIndex(where: { aMovie in
+                        return aMovie.id == movie.id
+                    }),
+                    indexOfMovie >= self.output.movies.count - 4
+                else {
+                    return
+                }
+                
+                self.fetchMovies()
+            }
+            .store(in: &cancellables)
+    }
+    
 }
 
 // MARK: - Networking
 extension MoviesListViewModel {
     
     private func fetchMovies() {
+        if self.output.isFetchingMovies { return }
+        
         Task { @MainActor in
             defer {
                 self.output.isFetchingMovies = false;
             }
             
             self.output.isFetchingMovies = true;
+            self.output.errorMessage = nil;
             
             do {
                 let moviesList = try await self.moviesListRepository.getMoviesList()

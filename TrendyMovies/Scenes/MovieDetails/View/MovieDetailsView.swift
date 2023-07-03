@@ -22,9 +22,12 @@ struct MovieDetailsView: View {
                         .frame(width: screenSize.width, height: screenSize.width * 14 / 9.0)
                         .clipped()
                 } placeholder: {
-                    Image(systemName: "popcorn.fill")
-                        .resizable()
-                        .frame(width: 48)
+                    VStack {
+                        ProgressView {
+                            Text("Loading poster...")
+                        }
+                    }
+                    .frame(width: screenSize.width, height: screenSize.width * 14 / 9.0)
                 }
                 
                 VStack(alignment: .leading, content: {
