@@ -184,9 +184,17 @@
 		7609E2B62A5349CC002216A7 /* MovieDetails */ = {
 			isa = PBXGroup;
 			children = (
-				7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */,
+				7609E2BB2A535220002216A7 /* View */,
 			);
 			path = MovieDetails;
+			sourceTree = "<group>";
+		};
+		7609E2BB2A535220002216A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -54,7 +54,7 @@ struct MoviesListView: View {
     
     private func makeMovieRowView(movie: Movie) -> some View {
         return NavigationLink {
-            MovieDetailsView()
+            MovieDetailsView(movie: movie)
         } label: {
             HStack(alignment: .top, spacing: 8) {
                 AsyncImage(url: movie.posterPath.url) { image in
