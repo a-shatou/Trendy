@@ -21,13 +21,13 @@ final class MoviesListViewModel: ViewModel, MoviesListViewModelProtocol, ViewMod
     }
     
     class Input: ObservableObject {
-        let viewDidAppearTrigger: AnyUIEvent<Void> = .create()
-        
+        let viewAppearedTrigger: AnyUIEvent<Void> = .create()
     }
     
     class Output: ObservableObject {
-        @Published fileprivate(set) var movies: [Movie]?
+        @Published fileprivate(set) var movies: [Movie] = []
         @Published fileprivate(set) var isFetchingMovies: Bool = false
+        @Published fileprivate(set) var errorMessage: String?
         @Published fileprivate(set) var route: Route?
         
         init() {
@@ -45,27 +45,41 @@ final class MoviesListViewModel: ViewModel, MoviesListViewModelProtocol, ViewMod
         
         super.init()
         
-        prepareState()
-        
-        observeViewDidAppearTrigger()
-    }
-    
-    private func prepareState() {
-        Task { @MainActor in
-            
-        }
+        observeViewAppearedTrigger()
     }
 }
 
 // MARK: - Observers
 extension MoviesListViewModel {
     
-    private func observeViewDidAppearTrigger() {
+    private func observeViewAppearedTrigger() {
         input
-            .viewDidAppearTrigger
+            .viewAppearedTrigger
             .sink { [weak self] in
                 guard let self else { return }
+                self.fetchMovies()
             }
             .store(in: &cancellables)
+    }
+}
+
+// MARK: - Networking
+extension MoviesListViewModel {
+    
+    private func fetchMovies() {
+        Task { @MainActor in
+            defer {
+                self.output.isFetchingMovies = false;
+            }
+            
+            self.output.isFetchingMovies = true;
+            
+            do {
+                let moviesList = try await self.moviesListRepository.getMoviesList()
+                self.output.movies.append(contentsOf: moviesList)
+            } catch {
+                self.output.errorMessage = "An error occurred fetching the list of movies"
+            }
+        }
     }
 }

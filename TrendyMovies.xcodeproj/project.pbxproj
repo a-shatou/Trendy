@@ -11,8 +11,6 @@
 		7609E2822A52F5E4002216A7 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2812A52F5E4002216A7 /* MoviesListView.swift */; };
 		7609E2842A52F5E6002216A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609E2832A52F5E6002216A7 /* Assets.xcassets */; };
 		7609E2872A52F5E6002216A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7609E2862A52F5E6002216A7 /* Preview Assets.xcassets */; };
-		7609E2892A52F5E6002216A7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2882A52F5E6002216A7 /* Persistence.swift */; };
-		7609E28C2A52F5E6002216A7 /* TrendyMovies.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7609E28A2A52F5E6002216A7 /* TrendyMovies.xcdatamodeld */; };
 		7609E2972A5324AE002216A7 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2962A5324AE002216A7 /* MoviesListViewModel.swift */; };
 		7609E29A2A53251B002216A7 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = 7609E2992A53251B002216A7 /* Factory */; };
 		7609E29D2A532574002216A7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E29C2A532574002216A7 /* ViewModel.swift */; };
@@ -22,6 +20,9 @@
 		7609E2AB2A5327A6002216A7 /* MoviesListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2AA2A5327A6002216A7 /* MoviesListRepository.swift */; };
 		7609E2AD2A532812002216A7 /* RepositoryContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2AC2A532812002216A7 /* RepositoryContainer.swift */; };
 		7609E2AF2A532A08002216A7 /* AnySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2AE2A532A08002216A7 /* AnySubject.swift */; };
+		7609E2B22A532D61002216A7 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2B12A532D61002216A7 /* ViewExtensions.swift */; };
+		7609E2B82A5349DD002216A7 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */; };
+		7609E2BA2A534AF3002216A7 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7609E2B92A534AF3002216A7 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +31,6 @@
 		7609E2812A52F5E4002216A7 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
 		7609E2832A52F5E6002216A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7609E2862A52F5E6002216A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7609E2882A52F5E6002216A7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7609E28B2A52F5E6002216A7 /* TrendyMovies.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrendyMovies.xcdatamodel; sourceTree = "<group>"; };
 		7609E2962A5324AE002216A7 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
 		7609E29C2A532574002216A7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		7609E2A02A5325DC002216A7 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
@@ -39,6 +38,9 @@
 		7609E2AA2A5327A6002216A7 /* MoviesListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListRepository.swift; sourceTree = "<group>"; };
 		7609E2AC2A532812002216A7 /* RepositoryContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryContainer.swift; sourceTree = "<group>"; };
 		7609E2AE2A532A08002216A7 /* AnySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnySubject.swift; sourceTree = "<group>"; };
+		7609E2B12A532D61002216A7 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		7609E2B92A534AF3002216A7 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +81,7 @@
 				7609E29B2A53256B002216A7 /* Base */,
 				7609E2A22A53263B002216A7 /* Models */,
 				7609E29E2A532579002216A7 /* Scenes */,
-				7609E2922A52F602002216A7 /* Persistence */,
+				7609E2B02A532D55002216A7 /* Extensions */,
 				7609E2952A52F73F002216A7 /* Assets */,
 				7609E2852A52F5E6002216A7 /* Preview Content */,
 			);
@@ -92,15 +94,6 @@
 				7609E2862A52F5E6002216A7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		7609E2922A52F602002216A7 /* Persistence */ = {
-			isa = PBXGroup;
-			children = (
-				7609E2882A52F5E6002216A7 /* Persistence.swift */,
-				7609E28A2A52F5E6002216A7 /* TrendyMovies.xcdatamodeld */,
-			);
-			path = Persistence;
 			sourceTree = "<group>";
 		};
 		7609E2932A52F716002216A7 /* Views */ = {
@@ -140,6 +133,7 @@
 		7609E29E2A532579002216A7 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7609E2B62A5349CC002216A7 /* MovieDetails */,
 				7609E29F2A532581002216A7 /* MoviesList */,
 			);
 			path = Scenes;
@@ -176,6 +170,23 @@
 				7609E2AA2A5327A6002216A7 /* MoviesListRepository.swift */,
 			);
 			path = Repos;
+			sourceTree = "<group>";
+		};
+		7609E2B02A532D55002216A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7609E2B12A532D61002216A7 /* ViewExtensions.swift */,
+				7609E2B92A534AF3002216A7 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7609E2B62A5349CC002216A7 /* MovieDetails */ = {
+			isa = PBXGroup;
+			children = (
+				7609E2B72A5349DD002216A7 /* MovieDetailsView.swift */,
+			);
+			path = MovieDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,16 +267,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7609E2BA2A534AF3002216A7 /* StringExtensions.swift in Sources */,
 				7609E2972A5324AE002216A7 /* MoviesListViewModel.swift in Sources */,
-				7609E2892A52F5E6002216A7 /* Persistence.swift in Sources */,
 				7609E2822A52F5E4002216A7 /* MoviesListView.swift in Sources */,
+				7609E2B82A5349DD002216A7 /* MovieDetailsView.swift in Sources */,
 				7609E2AD2A532812002216A7 /* RepositoryContainer.swift in Sources */,
-				7609E28C2A52F5E6002216A7 /* TrendyMovies.xcdatamodeld in Sources */,
 				7609E2AB2A5327A6002216A7 /* MoviesListRepository.swift in Sources */,
 				7609E29D2A532574002216A7 /* ViewModel.swift in Sources */,
 				7609E2802A52F5E4002216A7 /* TrendyMoviesApp.swift in Sources */,
 				7609E2AF2A532A08002216A7 /* AnySubject.swift in Sources */,
 				7609E2A42A53264A002216A7 /* Movie.swift in Sources */,
+				7609E2B22A532D61002216A7 /* ViewExtensions.swift in Sources */,
 				7609E2A12A5325DC002216A7 /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,19 +511,6 @@
 			productName = AutoChangeable;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		7609E28A2A52F5E6002216A7 /* TrendyMovies.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				7609E28B2A52F5E6002216A7 /* TrendyMovies.xcdatamodel */,
-			);
-			currentVersion = 7609E28B2A52F5E6002216A7 /* TrendyMovies.xcdatamodel */;
-			path = TrendyMovies.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7609E2742A52F5E3002216A7 /* Project object */;
 }

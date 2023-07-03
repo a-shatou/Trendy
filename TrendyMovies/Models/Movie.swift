@@ -9,13 +9,21 @@ import Foundation
 import AutoChangeable
 
 struct Movie: AutoChangeable {
-    let name: String
+    let id: Int
+    let title: String
+    let posterPath: String
+    let overview: String
+    let year: String
 }
 
 extension Movie: Changeable {
     init(copy: ChangeableWrapper<Self>) {
         self.init(
-            name: copy.name
+            id: copy.id,
+            title: copy.title,
+            posterPath: copy.posterPath,
+            overview: copy.overview,
+            year: copy.year
         )
     }
 }
@@ -23,7 +31,7 @@ extension Movie: Changeable {
 extension Movie {
     
     static let stub: Movie = {
-        return .init(name: "")
+        return .init(id: 0, title: "", posterPath: "", overview: "", year: "")
     }()
     
 }
